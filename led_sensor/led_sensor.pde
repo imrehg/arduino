@@ -22,7 +22,7 @@ void loop()
 
   j = analogRead(LIGHT_PIN);
   Serial.println(j);
-  if (j < 1000) {
+  if (j < 950) {
      digitalWrite(DEBUG_LIGHT, HIGH);
   } else {
      digitalWrite(DEBUG_LIGHT, LOW);
